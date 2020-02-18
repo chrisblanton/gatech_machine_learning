@@ -42,6 +42,7 @@ If you do have a `.conda` that's not a link (it doesn't have the `->` part), the
 
 ```
      $ mv ~/.conda ~/data
+```
 
 - if you do not have a `~/.conda`
 
