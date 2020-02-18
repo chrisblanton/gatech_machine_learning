@@ -40,10 +40,12 @@ Check to see if you have a `.conda`
 If you do have a `.conda` that's not a link (it doesn't have the `->` part), then
 - if you have a `.conda`, move it to `~/data/.conda` using
 
+```
      $ mv ~/.conda ~/data
 
 - if you do not have a `~/.conda`
 
+```
      $ mkdir -P ~/data/.conda
      $ ln -s ~/data/.codna .conda 
  
