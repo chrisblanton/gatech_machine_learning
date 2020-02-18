@@ -49,7 +49,7 @@ If you do have a `.conda` that's not a link (it doesn't have the `->` part), the
 ```
      $ mkdir -P ~/data/.conda
      $ ln -s ~/data/.codna .conda 
-
+```
  
 
 ## Software Environment
