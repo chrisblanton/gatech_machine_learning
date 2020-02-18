@@ -10,15 +10,53 @@ You have learned some theory but how do you do your first Machine Learning proje
 
 In this workshop, we will work through example first project in machine learning. We will begin with a concept of a project, ingest the data, visualize and view potential correlations, select, train our model, and evaluate the model. 
 
-Prerequisites: Some familiarity with Python. 
+Prerequisites: Some familiarity with Python.
+
+# Getting the course materials
+
+The course materials are available at
+
+https://github.com/chrisblanton/gatech_machine_learning
+
+The materials can be obtained by cloing the git repo
+
+    $ git clone https://github.com/chrisblanton/gatech_machine_learning.git
+
+or by using the button to download a ZIP file.  
+
+# Setting up your account (if needed)
+
+If you are using PACE for the first time you may need to do this to get started.
+
+If you do not have a `data` directory in your home directory,
+
+   $ mkdir ~/data
+
+Check to see if you have a `.conda` 
+
+   $ ls -lhtra .conda
+
+   $ ls -lhta .conda
+lrwxrwxrwx 1 cblanton7 pace-admins 31 Sep 16 14:26 .conda -> /nv/hp16/cblanton7/data/.conda/
+
+If you do have a `.conda` that's not a link (it doesn't have the `->` part), then
+- if you have a `.conda`, move it to `~/data/.conda` using
+
+  $ mv ~/.conda ~/data
+
+- if you do not have a `~/.conda`
+
+  $ mkdir -P ~/data/.conda
+  $ ln -s ~/data/.codna .conda 
+ 
 
 ## Software Environment
 
 Here the sets used to setup the environment:
 
-     	 $ module load anaconda3/2019.03
-	 $ conda create -n pace_mlws_py37 python=3.7 tensorflow pandas numpy seaborn jupyter scikit-learn matplotlib
-	 # Follow the prompts as usual for creating an Anaconda environment.
+     $ module load anaconda3/2019.03
+     $ conda create -n pace_mlws_py37 python=3.7 tensorflow pandas numpy seaborn jupyter scikit-learn matplotlib
+     # Follow the prompts as usual for creating an Anaconda environment.
 
 A list of the packages in a yml format to create an environment can be found the file `pace_mlws_py37.yml` in this repositiory as well. 
 
@@ -26,7 +64,7 @@ A list of the packages in a yml format to create an environment can be found the
 
 The job can be started using the wrapper script as 
 
-    $ pace-jupyter-notebook -l nodes=1:ppn=1 -l walltime=02:00:00 -q pace-training --anaconda=anaconda3/2019.03 --conda-env=pace_mlws_py37
+    $ pace-jupyter-notebook -l nodes=1:ppn=1 -l walltime=02:00:00 -q pace-train --anaconda=anaconda3/2019.03 --conda-env=pace_mlws_py37
 
 Then following the instructions one the job has begun:
 
@@ -42,4 +80,10 @@ Then following the instructions one the job has begun:
    	 2) Type -L 55084:rich133-c32-10-r:55084 and then ENTER
    	 3) Connect your browser to http://localhost:55084/?token=ccd58369799be30f3173967b4aed5fb2a0029e5381a1af90
 
-After copying and pasting the link, you should reach a webpage. Navigating
+After copying and pasting the link, you should reach a webpage with a directory listing. You should be able to navigate to the directory with the course materials
+
+
+# Feedback Requested
+
+Please complete the quick survey. 
+<https://gatech.co1.qualtrics.com/jfe/form/SV_55uzMYLufTuiLch> 
