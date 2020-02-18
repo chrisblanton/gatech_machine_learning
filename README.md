@@ -30,24 +30,22 @@ If you are using PACE for the first time you may need to do this to get started.
 
 If you do not have a `data` directory in your home directory,
 
-   $ mkdir ~/data
+       $ mkdir ~/data
 
 Check to see if you have a `.conda` 
 
-   $ ls -lhtra .conda
-
-   $ ls -lhta .conda
-lrwxrwxrwx 1 cblanton7 pace-admins 31 Sep 16 14:26 .conda -> /nv/hp16/cblanton7/data/.conda/
+      $ ls -lhtra .conda
+      lrwxrwxrwx 1 cblanton7 pace-admins 31 Sep 16 14:26 .conda -> /nv/hp16/cblanton7/data/.conda/
 
 If you do have a `.conda` that's not a link (it doesn't have the `->` part), then
 - if you have a `.conda`, move it to `~/data/.conda` using
 
-  $ mv ~/.conda ~/data
+     $ mv ~/.conda ~/data
 
 - if you do not have a `~/.conda`
 
-  $ mkdir -P ~/data/.conda
-  $ ln -s ~/data/.codna .conda 
+     $ mkdir -P ~/data/.conda
+     $ ln -s ~/data/.codna .conda 
  
 
 ## Software Environment
