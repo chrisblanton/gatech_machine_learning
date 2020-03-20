@@ -66,7 +66,7 @@ A list of the packages in a yml format to create an environment can be found the
 
 The job can be started using the wrapper script as 
 
-    $ pace-jupyter-notebook -l nodes=1:ppn=1 -l walltime=02:00:00 -q pace-train --anaconda=anaconda3/2019.03 --conda-env=pace_mlws_py37
+    $ pace-jupyter-notebook -l nodes=1:ppn=1 -l walltime=02:00:00 -q pace-training --anaconda=anaconda3/2019.03 --conda-env=pace_mlws_py37
 
 Then following the instructions one the job has begun:
 
