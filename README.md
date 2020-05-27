@@ -2,6 +2,7 @@
 
 Developed by Christopher Blanton, Ph.D. 
 Georgia Institue of Technology
+Version 5/28/2020
 
 
 # Introduction
@@ -24,51 +25,17 @@ The materials can be obtained by cloing the git repo
 
 or by using the button to download a ZIP file.  
 
-# Setting up your account (if needed)
 
-If you are using PACE for the first time you may need to do this to get started.
 
-If you do not have a `data` directory in your home directory,
-
-       $ mkdir ~/data
-
-Check to see if you have a `.conda` 
-
-      $ ls -lhtra .conda
-      lrwxrwxrwx 1 cblanton7 pace-admins 31 Sep 16 14:26 .conda -> /nv/hp16/cblanton7/data/.conda/
-
-If you do have a `.conda` that's not a link (it doesn't have the `->` part), then
-- if you have a `.conda`, move it to `~/data/.conda` using
-
-```
-     $ mv ~/.conda ~/data
-```
-
-- if you do not have a `~/.conda`
-
-```
-     $ mkdir -P ~/data/.conda
-     $ ln -s ~/data/.codna .conda 
-```
- 
-
-## Software Environment
-
-Here the sets used to setup the environment:
-
-     $ module load anaconda3/2019.03
-     $ conda create -n pace_mlws_py37 python=3.7 tensorflow pandas numpy seaborn jupyter scikit-learn matplotlib
-     # Follow the prompts as usual for creating an Anaconda environment.
-
-A list of the packages in a yml format to create an environment can be found the file `pace_mlws_py37.yml` in this repositiory as well. 
-
-## Starting an Jupyter Notebook using `pace-jupyter-notebook`. 
+# Starting an Jupyter Notebook using `pace-jupyter-notebook`. 
 
 The job can be started using the wrapper script as 
 
-    $ pace-jupyter-notebook -l nodes=1:ppn=1 -l walltime=02:00:00 -q pace-training --anaconda=anaconda3/2019.03 --conda-env=pace_mlws_py37
+    $ pace-jupyter-notebook -l nodes=1:ppn=1 -l walltime=02:00:00 -q pace-training --anaconda=anaconda3/2020.02
 
 Then following the instructions one the job has begun:
+
+```
 
      Job successfully submitted!
      Waiting for job to start...
@@ -83,6 +50,7 @@ Then following the instructions one the job has begun:
    	 3) Connect your browser to http://localhost:55084/?token=ccd58369799be30f3173967b4aed5fb2a0029e5381a1af90
 
 After copying and pasting the link, you should reach a webpage with a directory listing. You should be able to navigate to the directory with the course materials
+```
 
 
 # Feedback Requested
