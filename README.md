@@ -9,7 +9,13 @@ Version 7/21/2020
 
 # Introduction
 
-You have learned some theory but how do you do your first Machine Learning project can be challenging: How to handle the data? How to identify what is essential in the data? How to visualize correlations? How to evaluate your model? What are some common pitfalls and how can you avoid falling into them? 
+You have learned some theory but how do you do your first Machine Learning project can be challenging: 
+
+- How to handle the data? 
+- How to identify what is essential in the data? 
+- How to visualize correlations? 
+- How to evaluate your model? 
+- What are some common pitfalls and how can you avoid falling into them? 
 
 In this workshop, we will work through example first project in machine learning. We will begin with a concept of a project, ingest the data, visualize and view potential correlations, select, train our model, and evaluate the model. 
 
