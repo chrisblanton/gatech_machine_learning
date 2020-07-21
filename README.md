@@ -1,8 +1,10 @@
 # Applications of Machine Learning: Your First Machine Learning Project
 
-Developed by Christopher Blanton, Ph.D. 
+Developed by Christopher Blanton, Ph.D.
+
 Georgia Institue of Technology
-Version 5/28/2020
+
+Version 7/21/2020
 
 
 # Introduction
@@ -31,7 +33,8 @@ or by using the button to download a ZIP file.
 
 The job can be started using the wrapper script as 
 
-    $ pace-jupyter-notebook -l nodes=1:ppn=1 -l walltime=02:00:00 -q pace-training --anaconda=anaconda3/2020.02 --conda-env=/nv/ap2/appml_env
+    $ pace-jupyter-notebook -l nodes=1:ppn=1 -l walltime=02:00:00 -q pace-training  \
+      --anaconda=anaconda3/2020.02 --conda-env=/nv/ap2/appml_env
 
 Then following the instructions one the job has begun:
 
