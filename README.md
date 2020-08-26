@@ -26,23 +26,22 @@ Prerequisites: Some familiarity with Python.
 Here are the quick steps to starting the workshop
 
 1. Connect to the cluster using 
-
-   	   $ ssh userid@pace-ice.pace.gatech.edu
-
-
+   ```
+   $ ssh userid@pace-ice.pace.gatech.edu
+   ```
 2. Get the materials for the workshop using
-
-       	   $ git clone https://github.com/chrisblanton/gatech_machine_learning.git
-
+   ```
+   $ git clone https://github.com/chrisblanton/gatech_machine_learning.git
+   ```
 3. Change to the directoy using
-   
-	$ cd ./gatech_machine_learning
-
+   ```
+   $ cd ./gatech_machine_learning
+   ```
 4. Start the session by running the quickstart script
-   	 
-	$ chmod +x ./start_workshop.sh
-	$ ./start_workshop.sh
-
+   ```   
+   $ chmod +x ./start_workshop.sh
+   $ ./start_workshop.sh
+   ```
 5. Follow the commands onscreeen as seen below.
 
 # Manual steps
