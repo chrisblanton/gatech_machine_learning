@@ -42,7 +42,7 @@ Here are the quick steps to starting the workshop
    $ chmod +x ./start_workshop.sh
    $ ./start_workshop.sh
    ```
-5. Follow the commands onscreeen as seen below.
+5. Follow the commands on-screeen as seen below.
 
 # Manual steps
 
