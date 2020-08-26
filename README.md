@@ -4,7 +4,7 @@ Developed by Christopher Blanton, Ph.D.
 
 Georgia Institue of Technology
 
-Version 7/21/2020
+Version 8/27/2020
 
 
 # Introduction
@@ -21,7 +21,32 @@ In this workshop, we will work through example first project in machine learning
 
 Prerequisites: Some familiarity with Python.
 
-# Getting the course materials
+# Quickstart
+
+Here are the quick steps to starting the workshop
+
+1. Connect to the cluster using 
+
+   $ ssh userid@pace-ice.pace.gatech.edu
+
+2. Get the materials for the workshop using
+
+   $ git clone https://github.com/chrisblanton/gatech_machine_learning.git
+
+3. Change ot the directoy using
+
+   $ cd ./gatech_machine_learning
+
+4. Start the session by running the quickstart script
+
+   $ chmod +x ./start_workshop.sh
+   $ ./start_workshop.sh
+
+5. Follow the commands onscreeen as seen below.
+
+# Manual steps
+
+## Getting the course materials
 
 The course materials are available at
 
@@ -35,12 +60,13 @@ or by using the button to download a ZIP file.
 
 
 
-# Starting an Jupyter Notebook using `pace-jupyter-notebook`. 
+
+## Starting an Jupyter Notebook using `pace-jupyter-notebook`. 
 
 The job can be started using the wrapper script as 
 
     $ pace-jupyter-notebook -l nodes=1:ppn=1 -l walltime=02:00:00 -q pace-training  \
-      --anaconda=anaconda3/2020.02 --conda-env=/nv/ap2/appml_env
+      --anaconda=anaconda3/2020.02 --conda-env=/storage/home/hcodaman1/cblanton7/coda-data/shared/envs/pace_mlws_py37
 
 Then following the instructions one the job has begun:
 
