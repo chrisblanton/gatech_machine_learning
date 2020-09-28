@@ -66,7 +66,7 @@ or by using the button to download a ZIP file.
 The job can be started using the wrapper script as 
 
     $ pace-jupyter-notebook -l nodes=1:ppn=1 -l walltime=02:00:00 -q pace-training  \
-      --anaconda=anaconda3 --conda-env=/storage/coda1/pace-admins/cblanton7/shared/envs/mlwspy37
+      --anaconda=anaconda3/2019.10 --conda-env=/storage/home/hpaceice1/shared-classes/envs/mlws
 
 Then following the instructions one the job has begun:
 
